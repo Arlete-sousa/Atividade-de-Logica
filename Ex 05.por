@@ -1,7 +1,7 @@
 programa
-{	cadeia operacao
-	real n1, n2
-	real multiplicacao, divisao, soma, subtracao
+{	inteiro operacao
+	real n1, n2, resultado
+	
 	
 	funcao inicio()
 	{
@@ -10,35 +10,28 @@ programa
 		escreva("Insira outro numero: ")
 		leia(n2)
 		limpa()
-
-		soma = n1+n2 
-		subtracao = n1-n2
-		multiplicacao = n1*n2
-		divisao = n1/n2
-
-		escreva("Voce quer: \nsoma \nsubtracao \ndivisao \nmultiplicacao ?\n")
+		escreva("Voce quer: \n1)soma \n2)subtracao \n3)divisao \n4)multiplicacao ?\n")
 		leia(operacao)
 		limpa()
-
-
-		//aqui a comparação deve ser entre a resposta do usuario (operacao) e a resposta (soma, divisao, subtracao ou multiplicacao
-		//Além disso, varivel OPERACAO deve ser comparada com as possiveis respostas do usuário, ou seja, voce tem que colocar entre " " as possíveis respostas, pois o usuario irá responder com texto
-		se(operacao == "soma" ou operacao == "Soma"){		
-		escreva("Resultado da soma:"," ", soma ) // no escreva, vc coloca o nome da operação que realiza a conta, e não repete ela dnv. Nas linhas acima vc ja fez essas contas e jogou elas em variaveis. Basta chamá-las. Por exemplo a SOMA. Voce fez a variavel SOMA acima e fez a operação que ela vai realizar, mas aqui no ESCREVA voce repetiu a conta n1 + n2, bastava  escreva SOMA.
-		
-		
-		}senao se(operacao == "subtração" ou operacao == "Subtração"){ // cuidado com as chaves. Voce nao abriu elas nos SENAO SE
-		escreva("Resultado da subtração:", " ", subtracao)
+		escolha(operacao){
+	  	caso 1:
+		resultado = n1 + n2
+		escreva( n1, " + ",n2, " = " , resultado )
+		pare
+		caso 2:
+		resultado = n1 - n2
+		escreva( n1, " - ",n2, " = " , resultado )
+		pare
+		caso 3:
+		resultado = n1 / n2
+		escreva( n1, " / ",n2, " = " , resultado )
+		pare
+		caso 4:
+		resultado = n1 * n2
+		escreva( n1, " * ",n2, " = " , resultado )
+		pare
+		caso contrario:escreva("Inaválido")
 		}
-		
-		senao  se(operacao == "multiplicação" ou operacao == "Multiplicação"){	
-		escreva("Resultado da multiplicação:", " ", multiplicacao)
-		}
-		
-		senao se(operacao == "divisão" ou operacao == "Divisão"){
-		escreva("Resultado da divisão:", " ", divisao)
-		}
-	
 	}
 }
 /* $$$ Portugol Studio $$$ 
