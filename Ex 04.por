@@ -3,11 +3,11 @@ programa
 	
 	funcao inicio()
 	{
-		escreva(" Insira um valor1: ")
+		escreva("Insira o primeiro valor: ")
 		leia(valor1)
-		escreva(" Insira um valor2: ")
+		escreva("Insira o segundo valor: ")
 		leia(valor2)
-		escreva(" Insira um valor3: ")
+		escreva("Insira o terceiro valor: ")
 		leia(valor3)
 
 		se ((valor1<valor2 e valor2<valor3) ou (valor1<valor3 e valor3<valor2)) {
