@@ -1,9 +1,10 @@
 programa
-{	inteiro contador, numero, resultado
+{
+	inteiro contador, numero, resultado
 	
 	funcao inicio()
 	{
-		escreva(" Insira um numero: ")
+		escreva("Insira um numero: ")
 		leia(numero)
 		limpa()
 
