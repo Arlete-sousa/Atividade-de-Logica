@@ -1,18 +1,19 @@
 programa
-{	inteiro valor
+{
+	inteiro valor
 	
 	funcao inicio()
 	{
-		escreva(" Insira um valor: ")
+		escreva("Insira um valor: ")
 		leia(valor)
 		limpa()
 
 		se(valor>0){
-			escreva(" Positivo")
+			escreva("\nPositivo")
 		}senao se(valor<0)
-		escreva("Negativo")
+		escreva("\nNegativo")
 		se(valor==0){
-			escreva(" Zero")
+			escreva("\nZero")
 			
 		}
 	}
